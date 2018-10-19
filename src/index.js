@@ -1,11 +1,11 @@
 import directive from './directive'
-import component from './component'
+import VFragment from './component'
 import ssr       from './ssr'
 
 export default {
   ssr,
   directive,
-  component,
+  VFragment,
   Plugin: {
     install: function(Vue) {
       Vue.directive('fragment', directive)

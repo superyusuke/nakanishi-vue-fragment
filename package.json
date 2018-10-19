@@ -1,6 +1,6 @@
 {
-  "name": "vue-fragments",
-  "version": "2.1.0",
+  "name": "@nakanishi/vue-fragment",
+  "version": "0.1.0",
   "description": "fragment component for vuejs",
   "main": "dist/vue-fragments.min.js",
   "scripts": {
@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/y-nk/vue-fragments.git"
+    "url": "git+https://github.com/superyusuke/nakanishi-vue-fragment"
   },
   "keywords": [
     "vuejs",
     "fragment",
     "component"
   ],
-  "author": "Julien Barbay",
+  "author": "Julien Barbay, Nakanishi, Yusuke(just fix)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/y-nk/vue-fragments/issues"
+    "url": "https://github.com/superyusuke/nakanishi-vue-fragment"
   },
   "peerDependencies": {
     "vue": "^2.5.16"
