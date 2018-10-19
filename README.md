@@ -2,6 +2,9 @@
 ## what
 a very candide fragment component for Vue.js
 
+もともと公開されていたモジュールの、export 周りのバグを修正しただけのものです。
+https://www.npmjs.com/package/vue-fragments
+
 ## why
 If you arrived here, i think you searched hard and you know why you're here.
 
@@ -13,14 +16,14 @@ It's impossible to use functional components or slots, since it's all about vDOM
 Also, for semantics, I'm adding a `VFragment` component so you can use a meaningful `<v-fragment />` instead of `<div v-fragment />` (but it's literally the same).
 
 ### Use
--  download the package `npm i -s vue-fragments`
+-  download the package `npm i -s @superyusuke/vue-fragment`
 
 From here, you can load a plugin version, or use the component independently.
 
-- Plugin: 
+- Plugin:
     ```
-    import Plugin as FragmentPlugin from 'vue-fragments'
-    Vue.use(FragmentPlugin)
+    import { Plugin } from '@superyusuke/vue-fragment'
+    Vue.use(Plugin)
 
     …
 
@@ -37,7 +40,7 @@ From here, you can load a plugin version, or use the component independently.
 
 - Component:
     ```
-    import { VFragment } from 'vue-fragments'
+    import { VFragment } from '@superyusuke/vue-fragment'
 
     export const MyComponent {
       components: { VFragment },
@@ -50,5 +53,3 @@ From here, you can load a plugin version, or use the component independently.
       data() { return { message: 'hello world }}
     }
     ```
-
-_By the way, i cannot use "vue-fragment" because [it's parked](https://www.npmjs.com/package/vue-fragment) on npm. sorry for that._
